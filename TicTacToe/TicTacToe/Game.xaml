@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe.Game">
+    <ContentPage.Content>
+        <StackLayout x:Name="Controls">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label Text="TicTacToe" FontSize="Large" Grid.ColumnSpan="3" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" />
+
+                <Button x:Name="b1" Text="" Clicked="Button_Clicked" Grid.Column="0" Grid.Row="1" FontSize="Large" HorizontalOptions="End" WidthRequest="100" HeightRequest="100" />
+                <Button x:Name="b2" Text="" Clicked="Button_Clicked" Grid.Column="1" Grid.Row="1" FontSize="Large" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" />
+                <Button x:Name="b3" Text="" Clicked="Button_Clicked" Grid.Column="2" Grid.Row="1" FontSize="Large" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+
+                <Button x:Name="b4" Text="" Clicked="Button_Clicked" Grid.Column="0" Grid.Row="2" FontSize="Large" HorizontalOptions="End" WidthRequest="100" HeightRequest="100" />
+                <Button x:Name="b5" Text="" Clicked="Button_Clicked" Grid.Column="1" Grid.Row="2" FontSize="Large" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" />
+                <Button x:Name="b6" Text="" Clicked="Button_Clicked" Grid.Column="2" Grid.Row="2" FontSize="Large" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+
+                <Button x:Name="b7" Text="" Clicked="Button_Clicked" Grid.Column="0" Grid.Row="3" FontSize="Large" HorizontalOptions="End" WidthRequest="100" HeightRequest="100" />
+                <Button x:Name="b8" Text="" Clicked="Button_Clicked" Grid.Column="1" Grid.Row="3" FontSize="Large" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" />
+                <Button x:Name="b9" Text="" Clicked="Button_Clicked" Grid.Column="2" Grid.Row="3" FontSize="Large" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+
+                <Label Text="Now X has a turn" x:Name="NowMoves" Grid.ColumnSpan="3" Grid.Row="4" FontSize="Medium" HorizontalOptions="Center" />
+
+                <Button Text="Play again" x:Name="PlayAgain" Clicked="PlayAgain_Clicked" Grid.ColumnSpan="3" Grid.Row="5" WidthRequest="200" HorizontalOptions="Center" IsVisible="False" />
+                <Button Text="Main menu" x:Name="MainMenu" Clicked="MainMenu_Clicked" Grid.ColumnSpan="3" Grid.Row="6" WidthRequest="200" HorizontalOptions="Center" IsVisible="False" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -13,5 +13,11 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+
+        async void Play_Clicked(object sender, EventArgs e)
+        {
+            var game = new Game();
+            await Navigation.PushAsync(game);
+        }
     }
 }
